@@ -1,0 +1,33 @@
+body{
+  background-color: grey;
+}
+
+.calendarBox{
+  background-color: white; 
+  border-style: solid;
+  border-width: 3px;
+  border-color:black;
+  height: 500px;
+  width: 500px;
+  flex-direction: row;
+  position: absolute; 
+  top: 15%; 
+  left: 35%;
+}
+
+.daysName{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 400px; /* Used to create the space in between them*/
+  width: 100%; /* Aligns them in the center */
+  color: blue; 
+
+}
+
+
+.monthName{
+  text-align: center;
+  color: blue;
+}
