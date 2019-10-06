@@ -3,31 +3,71 @@ body{
 }
 
 .calendarBox{
-  background-color: white; 
-  border-style: solid;
-  border-width: 3px;
-  border-color:black;
-  height: 500px;
-  width: 500px;
-  flex-direction: row;
-  position: absolute; 
-  top: 15%; 
-  left: 35%;
-}
-
-.daysName{
+  background-color: white;
+  width: 1000px;
+  border-style: solid; 
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  width: 400px; /* Used to create the space in between them*/
-  width: 100%; /* Aligns them in the center */
-  color: blue; 
-
+  text-align: center;
+  position: absolute; 
+  top: 25%; 
+  left: 15%;
+  
 }
-
 
 .monthName{
   text-align: center;
-  color: blue;
+  color: #4682B4;
+  font: "CopperHewwit-Bold";
+  }
+
+.daysName{
+  display: flex;
+  width: 100%;
+  color: #4682B4;
+  font: "CopperHewwit-Bold";
+  margin-left: 10px;
 }
+
+.daysNumbers{
+  display: flex;
+  width: 90%;
+  position: relative;
+  list-style: none;
+  color: #F4A460;
+} 
+
+/*Haven't found a way yet to display it into columns */
+.numbers{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(100%/7); /* This should work */
+  border-style: solid;
+  border-color: #F4A460;  
+  margin: 2px;
+  font: "GT-Pressura-Regular";
+  font-weight: bold;
+}
+
+.buttons{
+  margin: 5px;
+}
+
+.cancel{
+  color: 	#808080;
+  margin: 20px;
+  border-color:#808080;
+  padding: 5px;
+  font: "GT-PressuraMono";
+  font-weight: bold;
+}
+
+.changeDate{
+  color: #F4A460;
+  border-style: solid;
+  border-color: #F4A460;
+  padding: 5px;
+  font: "GT-PressuraMono";
+  font-weight: bold;
+}
+
+

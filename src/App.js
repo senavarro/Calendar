@@ -1,17 +1,14 @@
-import React, { Component }  from 'react';
+import React from 'react';
 import './App.css';
+import Calendar from './Components/Calendar/index';
 
-import Calendar from './Components/Calendar/index'
 
-
-class App extends Component {
-  render(){
-    return(
-      <div>
-        <Calendar />
-      </div>
-    )
-  }
+function App() {
+  return (
+    <div className="App">
+      <Calendar />
+    </div>
+  );
 }
 
 export default App;
